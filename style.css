@@ -1,114 +1,159 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Ubuntu', sans-serif;
 }
 
-a{
+a {
     text-decoration: none;
     color: #000;
 }
 
-img{
+img {
     object-fit: cover;
 }
 
-body{
+body {
     background-color: #ffffff;
 }
 
-nav{
-    padding: 0 80px;
+nav {
+    padding: 0 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 80px;
 }
 
-nav a.logo{
-    font-size: 33px;
-    color: #0f2182;
+nav a.logo {
+    font-size: 28px;
+    color: #ffffff;
     font-weight: 600;
 }
 
-nav .links a:not(:last-child){
-    margin-right: 20px;
+nav .links a:not(:last-child) {
+    margin-right: 10px;
 }
 
-nav .login button{
-    padding: 8px 14px;
+nav .login button {
+    padding: 6px 10px;
     border: none;
     cursor: pointer;
     background-color: transparent;
 }
 
-nav .login button.signup{
+nav .login button.signup {
     background-color: #000;
     color: #fff;
     border-radius: 4px;
-    margin-right: 14px;
+    margin-right: 10px;
 }
 
-header{
-    padding: 0 80px;
+header {
+    padding: 0 20px;
     height: calc(100vh - 80px);
     display: flex;
+    flex-direction: column-reverse;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     border: 1px solid black;
-    background-image: url('Image/portada_tienda.jpg'); /* Replace with the path to your image */
-    background-size: auto;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url('Image/portada_tienda.jpg');
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    text-align: center;
 }
 
-header .left{
-    width: 700px;
+header .left {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 20px;
 }
 
-header .left h1{
-    font-size: 80px;
+header .left h1 {
+    font-size: 40px;
 }
 
-header .left h1 span{
+header .left h1 span {
     color: #0f2182;
 }
 
-header .left p{
-    margin: 40px 0;
+header .left p {
+    margin: 20px 0;
     color: #777;
 }
 
-header .left a{
-    display: flex;
+header .left a {
+    display: inline-flex;
     align-items: center;
+    justify-content: center;
     background: #000;
-    width: 200px;
+    width: 160px;
     padding: 8px;
     border-radius: 60px;
+    margin: 0 auto;
 }
 
-header .left a i{
+header .left a i {
     background-color: #fff;
     font-size: 24px;
     border-radius: 50%;
     padding: 8px;
 }
 
-header .left a span{
+header .left a span {
     color: #fff;
     margin-left: 10px;
 }
 
-header img{
-    width: 600px;
+header img {
+    width: 100%;
+    max-width: 300px;
+    margin-top: 20px;
 }
 
-h2.separator{
-    padding: 0 80px;
-    font-size: 40px;
-    margin-top: 40px;
+h2.separator {
+    padding: 0 20px;
+    font-size: 28px;
+    margin-top: 20px;
+}
+
+/* Media Query for Phones */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+    }
+
+    nav .links {
+        margin: 10px 0;
+    }
+
+    nav .links a {
+        display: block;
+        margin: 5px 0;
+    }
+
+    header {
+        height: auto;
+        padding: 20px;
+        flex-direction: column;
+    }
+
+    header .left h1 {
+        font-size: 28px;
+    }
+
+    header .left p {
+        font-size: 14px;
+    }
+
+    nav a.logo {
+        font-size: 24px;
+    }
 }
