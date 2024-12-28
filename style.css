@@ -29,7 +29,7 @@ nav {
     max-width: 100%;
     margin: auto;
     display: grid;
-    grid-template-columns: 50px 1fr 50px;
+    grid-template-columns: auto 1fr auto;
     grid-template-rows: 50px;
     justify-content: center;
     align-items: center;
@@ -374,26 +374,6 @@ nav .search {
             translateZ(300px);
     }
 
-    .nav{
-        grid-template-columns: auto 1fr auto;
-        width: 100%;
-        max-width: 100%;
-        margin: auto;
-        display: grid;
-        grid-template-rows: 50px;
-        justify-content: center;
-        align-items: center;
-        position: sticky;
-        top: 0;
-        z-index: 100;
-        background-color: rgba(67, 85, 65, 0.267); /* Initial solid background */
-        transition: background-color 0.3s, opacity 0.3s; /* Smooth transition */
-        padding: 0 0;
-        overflow-x: auto; /* Enable horizontal scrolling */
-        overflow-y: hidden; /* Prevent vertical scrolling */
-        white-space: nowrap; /* Prevent wrapping of content */
-        -webkit-overflow-scrolling: touch; /* Smooth scrolling on mobile devices */
-    }
 }
 
 /* PUBLIC SECTION */
