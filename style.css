@@ -29,7 +29,7 @@ nav {
     max-width: 100%;
     margin: auto;
     display: grid;
-    grid-template-columns: 50px 1fr 50px;
+    grid-template-columns: auto 1fr auto;
     grid-template-rows: 50px;
     justify-content: center;
     align-items: center;
@@ -365,7 +365,7 @@ nav .search {
     .banner .slider{
         width: 160px;
         height: 250px;
-        top: 50%;
+        top: 80%;
         left: calc(50% - 80px);
     }
     .banner .slider .item{
