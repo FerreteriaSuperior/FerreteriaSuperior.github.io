@@ -372,6 +372,16 @@ nav .search {
     .slider .list .item .content h2{
         font-size: 40px;
     }
+
+    .banner .content h2 {
+        padding-top: 10%; /* Adjust this to bring the title closer to the top */
+    }
+
+    .banner .content a {
+        margin-top: 90%; /* Use a positive value to move the link upwards */
+    }
+
+
 }
 
 /* PUBLIC SECTION */
@@ -391,9 +401,6 @@ nav .search {
         left: calc(50% - 50px);
     }
 
-    .banner .content h2{
-        padding-top: 30%;
-    }
     .banner .slider .item{
         transform: 
             rotateY(calc( (var(--position) - 1) * (360 / var(--quantity)) * 1deg))
