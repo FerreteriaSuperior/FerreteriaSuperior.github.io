@@ -374,7 +374,7 @@ nav .search {
     }
 
     .banner .content h2 {
-        padding-top: 10%; /* Adjust this to bring the title closer to the top */
+        padding-top: -20%; /* Adjust this to bring the title closer to the top */
     }
 
     .banner .content a {
