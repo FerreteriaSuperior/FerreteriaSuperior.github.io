@@ -377,12 +377,7 @@ nav .search {
     .nav{
         grid-template-columns: auto 1fr auto;
     }
-
-    .banner .content a {
-        margin-top: 52%;
-    }
 }
-
 
 /* PUBLIC SECTION */
 @media screen and (max-width: 450px) {
@@ -390,6 +385,16 @@ nav .search {
         top: 10%;
     }
 
+    /* Banner 3d scroll media view */
+    .banner .slider{
+        width: 100px;
+        height: 150px;
+        left: calc(50% - 50px);
+    }
+
+    .banner .content h2{
+        padding-top: 30%;
+    }
     .banner .slider .item{
         transform: 
             rotateY(calc( (var(--position) - 1) * (360 / var(--quantity)) * 1deg))
