@@ -379,6 +379,7 @@ nav .search {
 
     .banner .content a {
         margin-top: 90%; /* Use a positive value to move the link upwards */
+        margin-bottom: 22%;
     }
 
 
