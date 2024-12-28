@@ -39,72 +39,44 @@ nav {
     background-color: rgba(67, 85, 65, 0.267); /* Initial solid background */
     transition: background-color 0.3s, opacity 0.3s; /* Smooth transition */
     padding: 0 0;
-}
-
-nav.scrolled {
-    background-color: rgba(170, 255, 131, 0.2); /* Darker and transparent background when scrolled */
-    color: #ffffff; /* Text color change for better contrast */
-}
-
-/* Logo and other styles remain unchanged */
-nav .logo {
-    font-weight: bold;
-    text-shadow: 
-        0 0 5px #39ff14,
-        0 0 10px #39ff14,
-        0 0 20px #39ff14,
-        0 0 40px #39ff14,
-        0 0 80px #39ff14,
-        0 0 90px #39ff14,
-        0 0 100px #39ff14,
-        0 0 150px #39ff14;
-    padding-left: 20px;
-}
-
-nav .logo p {
-    text-align: center;
-    align-items: center;
-    border: 2px solid white;
-    border-radius: 10px;
-    width: max-content;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    overflow-y: hidden; /* Prevent vertical scrolling */
+    white-space: nowrap; /* Prevent wrapping of content */
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on mobile devices */
 }
 
 nav .menu {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    display: flex;
+    display: inline-flex; /* Inline-flex allows horizontal layout */
     justify-content: center;
     gap: 20px;
     font-weight: 500;
 }
 
 nav .menu li {
-    display: inline;
+    display: inline-block; /* Items are laid out inline */
 }
 
-nav .menu a {
-    text-decoration: none;
-    color: #ffffff;
-    font-weight: bold;
+nav .menu li a {
+    color: white;
 }
 
-nav .menu a:hover {
-    color: #39ff14;
+nav .logo {
+    flex-shrink: 0; /* Prevent logo from shrinking when scrolling */
+    text-shadow:
+    0 0 5px #39ff14,
+    0 0 10px #39ff14,
+    0 0 20px #39ff14,
+    0 0 40px #39ff14,
+    0 0 80px #39ff14,
+    0 0 90px #39ff14,
+    0 0 100px #39ff14,
+    0 0 150px #39ff14;
 }
 
 nav .search {
-    display: flex;
-    justify-content: flex-end;
+    flex-shrink: 0; /* Prevent search from shrinking when scrolling */
 }
 
-.whatsapp-icon {
-    transition: transform 0.3s ease;
-}
-
-.whatsapp-icon:hover {
-    transform: scale(1.1);
-}
 
 
 
