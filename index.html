@@ -7,6 +7,17 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <audio id="musica" loop style="display: none;">
+        <source src="Music\New_year_1.mp3" type="audio/mpeg">
+        Tu navegador no soporta audio. Por favor, actualízalo.
+    </audio>
+    <script>
+    // Reproduce la música al cargar la página
+    window.onload = function() {
+    const audio = document.getElementById('musica');
+    audio.play().catch(error => console.log('Autoplay bloqueado:', error));
+    };
+    </script>
 
     <!-- header -->
     <nav>
