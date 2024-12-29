@@ -200,7 +200,7 @@ nav .search {
     width: 150px;
     height: 220px;
     filter: brightness(.5);
-    transition: .5s;          /* TRANSITION TIME */
+    transition: .7s;          /* TRANSITION TIME */
     flex-shrink: 0;
 }
 .thumbnail .item img{
@@ -380,6 +380,9 @@ nav .search {
     .banner .content a {
         margin-top: 90%; /* Use a positive value to move the link upwards */
         margin-bottom: 70%;
+    }
+    .thumbnail{
+        bottom: 70px;
     }
 
 
