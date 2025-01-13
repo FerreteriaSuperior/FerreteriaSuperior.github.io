@@ -31,7 +31,6 @@ nav {
     display: grid;
     grid-template-columns: auto 1fr auto;
     grid-template-rows: 50px;
-    justify-content: center;
     align-items: center;
     position: sticky;
     top: 0;
